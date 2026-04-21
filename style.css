@@ -1,0 +1,223 @@
+/* footer css */
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    color: aliceblue;
+    bottom: 0;
+    position: absolute;
+
+
+    text-align: center;
+
+}
+footer p{
+    line-height: 70px;
+} 
+
+
+/*boite principal */
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+}
+/* retrait general de marge */
+*{
+    margin: 0;
+    font-family: "open sans",sans-serif;
+}
+/* cible generale */
+h1,li{
+    font-family: "poppins";
+}
+
+/* header */
+
+header{
+    background-image: url("/images/agriculture.jpg");
+    background-position:  left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+
+header{
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+header h1{
+    font-family: "Poppins",sans-serif;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 50px;
+    color: aliceblue;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-right: 42px;
+}
+
+nav ul li:hover{
+    border-bottom: 1px solid red;
+    border-radius: 1px;
+    cursor: pointer;
+    animation-duration: 5ms;
+}
+/* main  */
+
+main{
+    box-sizing: border-box;
+    background-color: chocolate;
+    min-height: auto;
+
+    overflow: hidden;
+    
+
+}
+
+/* This aside modification */
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background-color: rgb(185, 185, 185);
+    width: 25%;
+    height: 500px;
+}
+
+aside ul li{
+    
+    list-style-type: none;
+    margin-top: 5px;
+}
+aside ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+
+aside ul a:hover{
+    color: rgb(111, 248, 255);
+    
+}
+
+
+aside ul li::before{
+    content:"🌐" ;
+   
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+/* This is section modification */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background-color: rgb(90, 40, 239);
+    width: 50%;
+    height: 500px;
+    
+}
+
+section button{
+    background-color: rgb(43, 37, 38);
+    width: 120px;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: none;
+    padding: 12px;
+    font-family: "open sans",sans-serif;
+    text-transform: capitalize;
+    margin-top: 50px;
+    box-shadow:2px 2px 6px rgb(236, 26, 26), -2px -2px 6px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+section button:active{
+    background-color: rgb(229, 226, 226);
+    color: rgb(43, 37, 38);
+}
+
+/* This is article modification */
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;   
+
+    float: right;
+    background-color: aqua;
+    width: 25%;
+    height: 500px;
+   
+}
+
+
+/* Responsive CSS */
+
+@media (max-width: 768px) {
+    body{
+        height: auto;
+    }
+
+    *{
+        font-size: 20px;
+    }
+    aside,
+    section,
+    article {
+        float: none;      /* ✅ Supprime le float */
+        width: 100%;      /* ✅ Prend toute la largeur */
+        height: auto;     /* ✅ Hauteur automatique */
+    }
+    section button{
+        height: auto;
+        margin: 5px;
+    }
+    footer{
+        position: relative;
+    }
+}
